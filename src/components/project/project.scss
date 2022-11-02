@@ -1,0 +1,68 @@
+.projectCard {
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: max-content;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid white;
+
+  @media (max-width: 1100px) {
+    gap: 30px;
+  }
+}
+.projectImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    filter: grayscale(50%);
+
+    @media (max-width: 1100px) {
+      transform: scale(101%);
+    }
+  }
+}
+.testimonialLink {
+  height: 100%;
+  overflow: hidden;
+  @media (max-height: 900px) {
+    height: 120px;
+  }
+  @media (max-height: 790px) {
+    height: 100px;
+  }
+}
+.projectInfo {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-height: 790px) {
+    padding: 0 20px 20px 20px;
+  }
+}
+.projectTitle {
+  font-size: 20px;
+  @media (max-height: 790px) {
+    font-size: 17px;
+  }
+}
+.projectContent {
+  opacity: 0.8;
+  font-size: 15px;
+  @media (max-height: 790px) {
+    font-size: 12px;
+  }
+}

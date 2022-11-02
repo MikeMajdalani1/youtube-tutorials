@@ -1,0 +1,27 @@
+.calendar_container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 240px;
+}
+.calendar_button {
+  border: none;
+  background-color: rgb(22, 96, 255);
+  padding: 13px 23px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: rgb(0 0 0 / 42%) 0px 0px 17px;
+}
+.calendar_button:hover {
+  cursor: pointer;
+}
+
+.react-calendar__tile--now {
+  background: rgb(196, 196, 196) !important;
+}
+.react-calendar__tile--active {
+  background: rgb(145, 143, 140) !important;
+}
